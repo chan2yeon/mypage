@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 신년 계획</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+        * {
+            font-family: 'Hahmlet', serif;
+        }
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+            background-size: cover;
+            background-position: center;
+            
+            margin: auto;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+        }
+
+        .title {
+            background-color: tomato;
+            border-radius: 10px;
+            padding: 4px 14px;
+            color: white;
+        }
+
+        .msg {
+            margin: -5px 0 15px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<body class="bg center">
+    <h1 class="title-t2">2023년 신년계획</h1>
+    <p class="msg">I can do it</p>
+    <div class="flex-row wrap">
+        <div class="bucket img1-t2 center">나만의 웹 만들기</div>
+        <div class="bucket img2-t2 center">바디프로필 찍기</div>
+        <div class="bucket img2-t2 center">영어잘하기</div>
+        <div class="bucket img1-t2 center done">식물 키우기</div>
+        <div class="bucket img1-t2 center">데이터 시각화 배우기</div>
+        <div class="bucket img2-t2 center">영국에 가기</div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
